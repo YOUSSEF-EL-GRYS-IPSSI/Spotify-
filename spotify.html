@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="fa-5.5.0/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        ul{
+            padding-inline-start: 0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Circular, Helvetica, Arial, Sans-serif;
+        }
+        .mobileMenu{
+            display: none;
+        }
+        .firstContainer{
+            height: 100vh;
+            width: 100vw;
+            background:
+                    linear-gradient(rgba(0,0,0,0), black),
+                    linear-gradient(90deg, #C074B2, #8AB5E8);
+        }
+        .firstContainer section{
+            /*background-color: rgba(255,255,255,0.5);*/
+            width: 1200px;
+            height: 100vh;
+            margin: 0 auto;
+        }
+        .firstContainer section header{
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .firstContainer section header a{
+            display: inline-block;
+            text-align: center;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+        .firstContainer section header a:hover{
+            color:#2D46B9;
+        }
+        .firstContainer section header .profile{
+            width: 40px;
+            border-radius: 100%;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        @media all and (max-width: 1200px) {
+            .firstContainer section{
+                width: 100vw;
+            }
+            .firstContainer section header{
+                background-color: #000;
+                display: block;
+            }
+            #logo{
+                text-align: center;
+            }
+            .desktopMenu{
+                display: none;
+            }
+            .mobileMenu{
+                display: block;
+                text-align: center;
+                margin-top: 30px;
+            }
+            .mobileMenu a{
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                margin: 0 20px;
+            }
+            .mobileMenu a:hover{
+                color: #2D46B9;
+            }
+        }
+        @media all and (max-width: 450px) {
+            .firstContainer section header{
+                padding: 20px 0 0 0;
+            }
+            .mobileMenu a{
+                width: 100%;
+                margin: 0 !important;
+                border-top: 1px solid #333333;
+                padding: 10px 0;
+            }
+        }
+        .grande{
+            padding-top: 40px;
+            width: 1200px;
+            color: white;
+            display: flex;
+            
+           }
+           .txt{
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 1px;
+            margin-bottom: 1px;
+           }
+            button{
+            border-radius: 500px;
+            background-color: #0CF57D;
+            color: white;
+            border:none;
+            font-size: 25px;
+            padding: 10px;
+
+           }
+           .image{
+           width: 750px;
+           display: flex;
+           flex-wrap: wrap;
+           flex-direction:row; 
+           justify-content: space-around;
+           text-align: center;
+
+
+
+           }
+    </style>
+</head>
+<body>
+    <div class="firstContainer">
+        <section>
+            <header>
+                <div id="logo">
+                    <img src="spotify.svg" alt="Logo Spotify" width="150">
+                </div>
+                <nav class="desktopMenu">
+                    <a href="#">Premium</a>
+                    <a href="#">Aide</a>
+                    <a href="#">Télécharger</a>
+                    <a>|</a>
+                    <a href="#">
+                        <img src="oliver.png" class="profile" alt=""> youssef <i class="fas fa-angle-down animated bounce infinite"></i>
+                    </a>
+                </nav>
+                <nav class="mobileMenu">
+                    <a href="#">Premium</a>
+                    <a href="#">Aide</a>
+                    <a href="#">Télécharger</a>
+                    <a href="#">Mon profile</a>
+                </nav>
+            </header>
+            <main>
+                <div class="grande">
+                    <div>
+                        <p>écoutés récement</p>
+                        <p class="txt">Reprenez la lecture ou<br> vous étiez</p>
+                        <p>Reprenez la lecture la ou vous<br> vous ete arreté</p>
+                        <button>ouvrir la lecteur web</button>
+                    </div>
+                    <div class="image">
+                        <img src="THE-FLASH.jpg" style="height: 250px;width:250px; padding: 40px ">
+                        <img src="THE-FLASH.jpg" style="height: 250px;width:250px;padding: 5px">
+                        <img src="THE-FLASH.jpg" style="height: 250px;width:250px;padding: 5px">
+                        <img src="THE-FLASH.jpg" style="height: 250px;width:250px;padding: 5px">
+                        <img src="THE-FLASH.jpg" style="height: 250px;width:250px;padding: 5px">
+                        <img src="THE-FLASH.jpg" style="height: 250px;width:250px;padding: 5px">
+  
+                    </div>
+                
+               </div> 
+            </main>
+           
+    </div>
+</body>
+</html>
